@@ -79,7 +79,7 @@ export const Skills = () => {
                     <span className="text-primary text-sm font-medium tracking-wider uppercase animate-fade-in">
                         Technical Expertise
                     </span>
-                    <h1 className=" text-center text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-primary">Technologies <span className="text-5xl text-red-500">&hearts;</span><span className="font-serif italic font-normal text-white"> I to work with</span> </h1>
+                    <h1 className=" text-center text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-primary">Technologies I <span className="text-5xl text-red-500">&hearts;</span><span className="font-serif italic font-normal text-white"> to work with</span> </h1>
                     <p className="text-muted-foreground animate-fade-in animation-delay-200">
             My technical toolkit for crafting efficient and user-focused solutions.
           </p>
