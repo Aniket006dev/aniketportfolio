@@ -39,7 +39,7 @@ export const Projects = () => {
 
     ]
     return (
-        <section id="projects" className="py-32 relative overflow-hidden">
+        <section id="projects" className="pt-22 md:py-32 relative overflow-hidden">
             {/* bg-blur  */}
 
             <div className="container mx-auto px-6 relative z-10">

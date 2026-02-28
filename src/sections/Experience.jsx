@@ -3,7 +3,7 @@ export const Experience = () => {
         period: "2025-Present",
         role: "Problem solving mentor/intern - DSA(JAVA)",
         company: "Apna College",
-        desc: "Participated in structured technical learning programs focused on DSA and web development. Engaged in problem-solving, peer discussions, and industry-oriented preparation, gaining exposure to real-world internship workflows and professional communication.",
+        desc: "Participated in structured technical learning programs focused on DSA and web development. Engaged in problem-solving, peer discussions, and industry-oriented preparation.",
         tech: "Data Structures & Algorithms, Web Development Fundamentals, Problem Solving",
         current: true,
     },
@@ -19,7 +19,7 @@ export const Experience = () => {
         period: "2025-2026",
         role: "AZ-CCP Lead",
         company: "AlgoZenith | Remote / Part-time",
-        desc: "Leading the AlgoZenith Campus Connect Program by coordinating student onboarding, organizing learning sessions, and acting as a bridge between AlgoZenith and the student community. Promoted structured learning in DSA and competitive programming.",
+        desc: "Leading as Campus lead promoted structured learning in DSA and competitive programming.",
         tech: "Data Structures & Algorithms, Competitive Programming, Community Building, Leadership",
         current: true,
     },
@@ -33,7 +33,7 @@ export const Experience = () => {
     }
     ]
     return (
-        <section id="experience" className="relative max-w-5xl mx-auto py-32 overflow-hidden">
+        <section id="experience" className="relative max-w-5xl mx-auto pt-28 md:py-32 overflow-hidden">
             <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2" />
             <div className="container mx-auto px-6 relative z-10">
                 {/*section header  */}
@@ -60,7 +60,7 @@ export const Experience = () => {
 
                                 {/* card */}
                                 <div className="rounded-2xl border border-primary/50 bg-white/5 backdrop-blur-xl p-6 transition-all duration.-300 group-hover:-translate-y-1 group-hover:shadow-xl animate-fade-in" style={{ animationDelay: `${(idx + 1) * 100}ms`}}>
-                                    <div className="flex justify-between flex-wrap gap-2">
+                                    <div className="md:flex justify-between flex-wrap gap-2">
                                         <h3 className="text-lg font-semibold text-primary font-serif">
                                             {exp.role}
                                         </h3>

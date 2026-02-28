@@ -3,8 +3,8 @@ import { Button } from "../components/Button";
 import { useEffect, useState } from "react";
 
 const navLink=[
-    {href:"#", label:"Home"},
-    {href:"#summary", label:"Summary"},
+    {href:"#summary", label:"About"},
+    {href:"#skills", label:"Skills"},
     {href:"#projects", label:"Projects"},
     {href:"#experience", label:"Experience"},
 ];
@@ -24,7 +24,7 @@ export const Navbar=()=>{
     <header className={`fixed top-0 left-0 right-0 ${isScrolled? "bg-background py-3": "bg-transparent py-5"} z-50`}>
         <nav className="container mx-auto px-6 flex items-center justify-between">
             <a href="#" className="text-xl font-bold tracking-tight hover:text-primary">
-                <span className="text-primary">Aniket mishra</span></a>
+                <span className="text-primary">AM<span className="text-foreground">.</span></span></a>
             <div className="hidden md:flex items-center gap-1 bg-background border border-yellow-500 rounded-full">
                 <div className="glass px-2 py-1 flex item-center gap-1">
                     {navLink.map((link, key)=>
@@ -32,8 +32,8 @@ export const Navbar=()=>{
                     )}
                 </div>
             </div>
-            <div className="hidden md:block border border-muted bg-background rounded-full hover:border-none">
-                {/* <Button size="sm" >Connect</Button> */}
+            <div className="hidden md:block border border-primary/80 bg-background rounded-full hover:border-none">
+                <a href="#contact"><Button size="sm" >Contact</Button></a>
             </div>
 
             <button className="md:hidden p-2 text-foreground cursor-pointer" onClick={()=>setMobMenu((prev)=>!prev)}>
@@ -48,7 +48,7 @@ export const Navbar=()=>{
                         <a href={link.href} key={key} className="text-lg text-muted-foreground hover:text-foreground py-2">{link.label}</a>
                     )}
 
-                    {/* <Button >Connect_with_me</Button> */}
+                    <a href="#contact"><Button size="sm" >Contact</Button></a>
                 </div>
         </div>
         )}

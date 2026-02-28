@@ -26,10 +26,11 @@
 }
 
 @layer components{
-  .glow-text{
+  
+    /* .glow-text {
     text-shadow: 0 0 30px
-    color-mix(in srg , var(--color-primary)50%, transparent);
-  }
+      color-mix(in srgb, var(--color-primary) 50%, transparent);
+  } */
 }
 
 @layer base {

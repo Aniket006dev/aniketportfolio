@@ -26,7 +26,7 @@ export const About = () => {
     ];
 
     return (
-        <section id="summary" className="py-32 relative overflow-hidden">
+        <section id="summary" className="py-22 md:py-32 relative overflow-hidden">
             <div className="container mx-auto px-6 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     {/* left column */}
@@ -45,7 +45,7 @@ export const About = () => {
                         </div>
                     </div>
                     {/* right column for above tablet */}
-                    <div className="grid sm:grid-cols-2 gap-6">
+                    <div className="hidden md:grid md:grid-cols-2 gap-6">
                         {features.map((item, idx)=>(
                             <div key={idx} className="border border-heighlight p-6  rounded-2xl animate-fade-in " style={{animationDelay: `${(idx+1)*100}ms`}}>
                             <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 hover:bg-primary/20">
