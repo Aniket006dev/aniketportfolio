@@ -48,7 +48,7 @@ export const Navbar=()=>{
                         <a href={link.href} key={key} className="text-lg text-muted-foreground hover:text-foreground py-2">{link.label}</a>
                     )}
 
-                    <a href="#contact"><Button size="sm" >Contact</Button></a>
+                    {/* <a href="#contact"><Button size="sm" >Contact</Button></a> */}
                 </div>
         </div>
         )}

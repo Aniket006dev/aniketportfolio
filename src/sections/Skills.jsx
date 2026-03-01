@@ -1,4 +1,4 @@
-import { Code2, Server, Palette, Brain, Wrench } from "lucide-react";
+import { Code2, Server, Palette, Brain, Wrench, Database, Cpu, Network } from "lucide-react";
 import {
     SiReact,
     SiJavascript,
@@ -40,6 +40,7 @@ export const Skills = () => {
                 { name: "Node.js", icon: SiNodedotjs },
                 { name: "Express.js", icon: SiExpress },
                 { name: "MongoDB", icon: SiMongodb },
+                { name: "Java", icon: FaJava }
             ],
         },
         {
@@ -69,58 +70,69 @@ export const Skills = () => {
                 { name: "AI/ML Tools", icon: Brain },
             ],
         },
+        {
+            title: "CS Core",
+            icon: Wrench,
+            skills: [
+                { name: "OOP", icon: FaJava },       
+                { name: "DBMS", icon: Database },    
+                { name: "CN", icon: Network },      
+                { name: "OS", icon: Cpu },        
+            ],
+        },
+
     ];
 
     return (<section id="skills" className="py-22 relative overflow-hidden">
         <div className="container mx-auto px-6 relative z-10">
 
-            
-                <div className="text-center max-w-3xl mx-auto mb-16">
-                    <span className="text-primary text-sm font-medium tracking-wider uppercase animate-fade-in">
-                        Technical Expertise
-                    </span>
-                    <h1 className=" text-center text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-primary">Technologies I <span className="text-5xl text-red-500">&hearts;</span><span className="font-serif italic font-normal text-white"> to work with</span> </h1>
-                    <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            My technical toolkit for crafting efficient and user-focused solutions.
-          </p>
 
-                </div>
+            <div className="text-center max-w-3xl mx-auto mb-16">
+                <span className="text-primary text-sm font-medium tracking-wider uppercase animate-fade-in">
+                    Technical Expertise
+                </span>
+                <h1 className=" text-center text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-primary">Technologies I <span className="text-5xl text-red-500">&hearts;</span><span className="font-serif italic font-normal text-white"> to work with</span> </h1>
+                <p className="text-muted-foreground animate-fade-in animation-delay-200">
+                    My technical toolkit for crafting efficient and user-focused solutions.
+                </p>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {skillsData.map((category, index) => {
-                        const Icon = category.icon;
+            </div>
 
-                        return (
-                            <div
-                                key={index}
-                                className="bg-background border border-muted rounded-2xl p-6 shadow-md hover:shadow-xl transition duration-300 animate-fade-in animation-delay-300" style={{ boxShadow: "0px 0px 8px orange" }}
-                            >
-                                {/* Header */}
-                                <div className="flex items-center gap-3 mb-6">
-                                    <Icon className="text-primary/80" size={24} />
-                                    <h3 className="text-xl font-semibold font-serif text-muted-foreground/90">{category.title}</h3>
-                                </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {skillsData.map((category, index) => {
+                    const Icon = category.icon;
 
-                                {/* Skill Tags */}
-                                <div className="flex flex-wrap gap-3">
-                                    {category.skills.map((skill, idx) => {
-                                        const SkillIcon = skill.icon;
-
-                                        return (
-                                            <div
-                                                key={idx}
-                                                className="border border-primary flex items-center gap-2 bg-primary/10 px-3 py-2 rounded-full text-sm hover:bg-muted hover:border-none transition"
-                                            >
-                                                <SkillIcon size={16} />
-                                                <span>{skill.name}</span>
-                                            </div>
-                                        );
-                                    })}
-                                </div>
+                    return (
+                        <div
+                            key={index}
+                            className="bg-background border border-muted rounded-2xl p-6 shadow-md hover:shadow-xl transition duration-300 animate-fade-in animation-delay-300" style={{ boxShadow: "0px 0px 8px orange" }}
+                        >
+                            {/* Header */}
+                            <div className="flex items-center gap-3 mb-6">
+                                <Icon className="text-primary/80" size={24} />
+                                <h3 className="text-xl font-semibold font-serif text-muted-foreground/90">{category.title}</h3>
                             </div>
-                        );
-                    })}
-                </div>
+
+                            {/* Skill Tags */}
+                            <div className="flex flex-wrap gap-3">
+                                {category.skills.map((skill, idx) => {
+                                    const SkillIcon = skill.icon;
+
+                                    return (
+                                        <div
+                                            key={idx}
+                                            className="border border-primary flex items-center gap-2 bg-primary/10 px-3 py-2 rounded-full text-sm hover:bg-muted hover:border-none transition"
+                                        >
+                                            <SkillIcon size={16} />
+                                            <span>{skill.name}</span>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    );
+                })}
+            </div>
 
         </div>
     </section>);

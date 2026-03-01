@@ -19,7 +19,7 @@ export const Hero = () => {
                     {/* left column -text content */}
                     <div className="space-y-8">
                         <div className="animate-fade-in">
-                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm ">
+                            <span className="inline-flex border border-primary/30 bg-background items-center gap-2 px-4 py-2 rounded-full text-sm ">
                                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" /> Software Developer cum Engineer
                             </span>
                         </div>
@@ -38,9 +38,9 @@ export const Hero = () => {
                                 Full-stack developer and problem solver exploring AI to build scalable, real-world solutions.</p>
                         </div>
                         <div className="flex flex-wrap gap-4 animate-fade-in animation delay-300">
-                            {/* <a href="#contact"><Button size="lg" className="border">
+                            <a href="#contact"><Button size="lg" className="border md:hidden">
                                 Get-in-Toch<ArrowRightCircle className="w-5 h-5"></ArrowRightCircle>
-                            </Button></a> */}
+                            </Button></a>
                             <a href="/Aniket_resume (4).pdf"><Button size="lg" className="border md:mx-2">
                                 See Resume<DownloadIcon className="w-5 h-5"></DownloadIcon>
                             </Button></a>
