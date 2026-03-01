@@ -1,4 +1,4 @@
-import { Github, Linkedin, Code, Heart } from "lucide-react";
+import { Github, Linkedin, Code, Heart, ArrowUp } from "lucide-react";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/Aniket006dev", label: "GitHub" },
@@ -7,10 +7,11 @@ const socialLinks = [
 ];
 
 const footerLinks = [
-  { href: "#summary", label: "Summary" },
-  { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
-  { href: "#contact", label: "Contact" },
+  // { href: "#summary", label: "Summary" },
+  // { href: "#projects", label: "Projects" },
+  // { href: "#experience", label: "Experience" },
+  // { href: "#contact", label: "Contact" },
+  { href: "#", label: "Back to top" },
 ];
 
 export const Footer = () => {
@@ -36,9 +37,10 @@ export const Footer = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors flex justify-center gap-1.5"
               >
                 {link.label}
+                <ArrowUp className="w-5 h-5"></ArrowUp>
               </a>
             ))}
           </nav>
