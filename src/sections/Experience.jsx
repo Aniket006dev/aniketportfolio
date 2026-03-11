@@ -1,12 +1,21 @@
 export const Experience = () => {
-    const experiences = [{
-        period: "2025-Present",
-        role: "Problem solving mentor/intern - DSA(JAVA)",
-        company: "Apna College",
-        desc: "Participated in structured technical learning programs focused on DSA and web development. Engaged in problem-solving, peer discussions, and industry-oriented preparation.",
-        tech: "Data Structures & Algorithms, Web Development Fundamentals, Problem Solving",
-        current: true,
-    },
+    const experiences = [
+        {
+            period: "2025-Present",
+            role: "Problem solving mentor/intern - DSA(JAVA)",
+            company: "Apna College",
+            desc: "Participated in structured technical learning programs focused on DSA and web development. Engaged in problem-solving, peer discussions, and industry-oriented preparation.",
+            tech: "Data Structures & Algorithms, Web Development Fundamentals, Problem Solving",
+            current: true,
+        },
+        {
+    period: "2026 – Present",
+    role: "Technical Content Intern (UI/UX Team)",
+    company: "i8CLOUD Consulting",
+    desc: "Created and structured technical content focused on UI/UX design principles, usability, and product design workflows. Collaborated with the UI/UX team to simplify complex design concepts into clear learning materials and contributed to documentation and guides for design processes.",
+    tech: "UI/UX Design, Technical Writing, Documentation, Content Strategy, Design Principles",
+    current: true,
+},
     // {
     //     period: "Sept 2025",
     //     role: "Full Stack Python Intern",
