@@ -38,7 +38,7 @@ export const Hero = () => {
                                 Full-stack developer and problem solver exploring AI to build scalable, real-world solutions.</p>
                         </div>
                         <div className="flex flex-wrap gap-4 animate-fade-in animation delay-300">
-                            <a href="/Aniket_resume (4).pdf"><Button size="lg" className="border md:mx-2">
+                            <a href="/Aniket_resume (5).pdf"><Button size="lg" className="border md:mx-2">
                                 See Resume<DownloadIcon className="w-5 h-5"></DownloadIcon>
                             </Button></a>
                             <a href="#contact"><Button size="lg" className="border md:hidden">
