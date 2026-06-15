@@ -9,7 +9,7 @@ export const Experience = () => {
             current: true,
         },
         {
-    period: "Mar_2026 – Apr_2026",
+    period: "Mar_2026 - Apr_2026",
     role: "Technical Content Intern (UI/UX Team)",
     company: "i8CLOUD Consulting",
     desc: "Creating structured technical content focused on UI/UX design principles, usability, and product design workflows. Collaborated with the UI/UX team to simplify complex design concepts into clear learning materials and contributed to documentation and guides for design processes.",
