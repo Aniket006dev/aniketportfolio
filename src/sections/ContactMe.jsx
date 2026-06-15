@@ -1,19 +1,19 @@
-import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle,} from "lucide-react";
+import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle, Github, Linkedin, Code } from "lucide-react";
 import { Button } from "../components/Button";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
-const contactInfo=[
-    {
-        icon:Mail,
-        label:"Eamil",
-        value:"aniket006mishra@gmail.com",
-        href:"mailto:aniket006mishra@gmail.com"
-    }
+const contactInfo = [
+  {
+    icon: Mail,
+    label: "Eamil",
+    value: "aniket006mishra@gmail.com",
+    href: "mailto:aniket006mishra@gmail.com"
+  }
 ];
 
-export const ContactMe=()=>{
-    const [formData, setFormData] = useState({
+export const ContactMe = () => {
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
@@ -173,11 +173,10 @@ export const ContactMe=()=>{
               {submitStatus.type && (
                 <div
                   className={`flex items-center gap-3
-                     p-4 rounded-xl ${
-                       submitStatus.type === "success"
-                         ? "bg-green-500/10 border border-green-500/20 text-green-400"
-                         : "bg-red-500/10 border border-red-500/20 text-red-400"
-                     }`}
+                     p-4 rounded-xl ${submitStatus.type === "success"
+                      ? "bg-green-500/10 border border-green-500/20 text-green-400"
+                      : "bg-red-500/10 border border-red-500/20 text-red-400"
+                    }`}
                 >
                   {submitStatus.type === "success" ? (
                     <CheckCircle className="w-5 h-5 flex-shrink-0" />
@@ -228,6 +227,17 @@ export const ContactMe=()=>{
                 Whether you need a full-time engineer or a freelance consultant,
                 let's talk!
               </p>
+            </div>
+            <div className="flex items-center justify-center gap-4 animate-fade-in animation-delay-400">
+              {/* <span className="text-sm text-muted-foreground">Reach me:</span> */}
+              {[
+                { icon: Linkedin, href: "https://www.linkedin.com/in/aniket-mishra-8390a4253/" },
+                { icon: Github, href: "https://github.com/Aniket006dev" },
+                { icon: Code, href: "https://leetcode.com/u/Aniket_dev/" }
+
+              ].map((socials, idx) => (
+                <a key={idx} href={socials.href} className="border border-muted-foreground text-muted-foreground rounded-full p-2 hover:text-primary hover:border-primary">{<socials.icon className="w-5 h-5" />}</a>
+              ))}
             </div>
           </div>
         </div>
