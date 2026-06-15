@@ -14,7 +14,7 @@ export const Experience = () => {
     company: "i8CLOUD Consulting",
     desc: "Creating structured technical content focused on UI/UX design principles, usability, and product design workflows. Collaborated with the UI/UX team to simplify complex design concepts into clear learning materials and contributed to documentation and guides for design processes.",
     tech: "UI/UX Design, Technical Writing, Documentation, Content Strategy, Design Principles",
-    current: true,
+    current: false,
 },
     // {
     //     period: "Sept 2025",
@@ -30,7 +30,7 @@ export const Experience = () => {
         company: "AlgoZenith | Remote / Part-time",
         desc: "Leading as Campus lead promoted structured learning in DSA and competitive programming.",
         tech: "Data Structures & Algorithms, Competitive Programming, Community Building, Leadership",
-        current: true,
+        current: false,
     },
     {
         period: "Jan_2025 - Present",
