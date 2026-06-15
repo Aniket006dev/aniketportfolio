@@ -1,15 +1,15 @@
 export const Experience = () => {
     const experiences = [
         {
-            period: "2025-Present",
-            role: "Problem solving intern - DSA(JAVA)",
+            period: "Feb_2026-Present",
+            role: "Teaching Assistant intern - DSA(JAVA)",
             company: "Apna College",
             desc: "Mentoring students to solve basic to advanced DSA problems using Java. focused on writing clear, efficient, and optimized solutions.",
             tech: "Data Structures & Algorithms, Web Development Fundamentals, Problem Solving",
             current: true,
         },
         {
-    period: "2026 – Present",
+    period: "Mar_2026–Apr_2026",
     role: "Technical Content Intern (UI/UX Team)",
     company: "i8CLOUD Consulting",
     desc: "Creating structured technical content focused on UI/UX design principles, usability, and product design workflows. Collaborated with the UI/UX team to simplify complex design concepts into clear learning materials and contributed to documentation and guides for design processes.",
@@ -25,7 +25,7 @@ export const Experience = () => {
     //     current: false,
     // },
     {
-        period: "2025-2026",
+        period: "Aug_2025-May_2026",
         role: "AZ-CCP Lead",
         company: "AlgoZenith | Remote / Part-time",
         desc: "Leading as Campus lead promoted structured learning in DSA and competitive programming.",
@@ -33,7 +33,7 @@ export const Experience = () => {
         current: true,
     },
     {
-        period: "2025 - 2027",
+        period: "Jan_2025 - Present",
         role: "Microsoft Learn Student Ambassador",
         company: "Microsoft | Student Community",
         desc: "Founded and led the MLSA chapter at the college, organizing technical sessions and workshops on Microsoft technologies. Encouraged peer learning through Microsoft Learn paths, certifications, and hackathons.",
