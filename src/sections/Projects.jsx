@@ -4,6 +4,14 @@ import { Button } from "../components/Button"
 export const Projects = () => {
     const projects = [
         {
+            title: "Assessly- AI-powered assignment creation ",
+            desc: "Assessly is a MERN-based platform for AI-powered assignment creation, class management for educators.",
+            image: "/Assessly-proj-img.png",
+            tags: ["React", "Redux", "Node.js", "Express", "MongoDB", "WebSockets", "LLM APIs"],
+            link: "https://assessly-client.onrender.com/",
+            github: "https://github.com/Aniket006dev/Assessly"
+        },
+        {
             title: "TraveX-  Smart Travel Discovery Platform ",
             desc: "Travex is a full-stack travel platform, supports secure media uploads, and provides a streamlined booking system with automated notifications.",
             image: "/Travex-proj-img.jpeg",
@@ -19,14 +27,14 @@ export const Projects = () => {
             link: "https://post-it-backend-web-app-u7jg.onrender.com/",
             github: "https://github.com/Aniket006dev/Post-it"
         },
-        {
-            title: "Virtual Practicals — Online Lab Platform",
-            desc: "Virtual Practicals is a web-based platform that enables students to perform and submit computer science lab assignments digitally, reducing dependency on physical lab infrastructure.",
-            image: "/virpract-proj-img.png",
-            tags: ["HTML", "CSS", "JavaScript"],
-            link: "https://aniket006dev.github.io/vir-practs/",
-            github: "https://github.com/Aniket006dev/vir-practs"
-        },
+        // {
+        //     title: "Virtual Practicals — Online Lab Platform",
+        //     desc: "Virtual Practicals is a web-based platform that enables students to perform and submit computer science lab assignments digitally, reducing dependency on physical lab infrastructure.",
+        //     image: "/virpract-proj-img.png",
+        //     tags: ["HTML", "CSS", "JavaScript"],
+        //     link: "https://aniket006dev.github.io/vir-practs/",
+        //     github: "https://github.com/Aniket006dev/vir-practs"
+        // },
 
         {
             title: "Ask_it — Domain-Based Q&A Platform",

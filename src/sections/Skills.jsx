@@ -40,7 +40,8 @@ export const Skills = () => {
                 { name: "Node.js", icon: SiNodedotjs },
                 { name: "Express.js", icon: SiExpress },
                 { name: "MongoDB", icon: SiMongodb },
-                { name: "Java", icon: FaJava }
+                { name: "Java", icon: FaJava },
+                { name: "Rest API", icon: Network }
             ],
         },
         {
