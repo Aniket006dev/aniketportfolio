@@ -1,7 +1,7 @@
 export const Experience = () => {
     const experiences = [
         {
-            period: "Feb_2026 - Present",
+            period: "Feb_2026 - June_2026",
             role: "Teaching Assistant intern - DSA(JAVA)",
             company: "Apna College",
             desc: "Mentoring students to solve basic to advanced DSA problems using Java. focused on writing clear, efficient, and optimized solutions.",
